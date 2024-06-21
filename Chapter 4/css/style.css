@@ -1,0 +1,46 @@
+
+
+/* pixel(px) is an absolute value,
+when we set absolute value to an element,
+it's size will not respond to change in browswer's
+font size.*/
+
+/*percentage(%) is an relative value,
+it represent a fraction of some other value, percentage
+values are always relative to some other quantity.
+*/
+
+
+*{
+    margin: 0;                   /*resetting, user agent default values*/
+    padding: 0;
+    box-sizing: border-box;     /*Take total size of box(except margin)*/
+}
+
+body{
+    min-height: 100vh;              /* if we want body to take full height*/
+}
+
+#first{
+    font-size: 32px;
+
+}
+
+#second{
+    font-size: 2rem;       /* 2 times of the root  */
+    width: 40ch;           /* limit to 40 character per line*/
+}
+
+
+header{
+    width: 50%;     
+}
+
+h1{
+    border: 2px dashed red;     /* Absolute values are used for these types*/
+    width: 50%;                   /* 50% of parent width(header)*/ 
+    font-size: 3rem;
+    padding: 0.5em;      /* 0.5 times of font-size*/
+}
+
+

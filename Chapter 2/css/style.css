@@ -1,0 +1,62 @@
+
+/* Selecting everything in our html  */
+/* Hear, every CSS property will be applied to every element, because it's not inheritance, it's actually selecting everything  */
+* {
+    font-family: monospace;
+}
+
+/* This will be inherited by all the elements inside body  */
+body{
+    font-size: 22px;
+    border: 3px solid black;    /* This will not be inherited */
+}
+
+/* But, not all CSS property's are inheritable , like border,form elements */
+button,input,textarea,select {
+    font:inherit                    /*Now, this will inherit the font properties from body*/
+}
+
+p{
+    color: purple!important;             /* This !important flag will increase prededence, Do Not Use this */
+}
+
+/* This will overide the upper one  */
+/* Whatever defination it reads at last will be applied  */
+/* Also, selector which is more specific will be applied always  */
+p{
+    color: red;
+}
+
+/* Selecting both h1, h2  */
+h1,h2{
+    color: blue;
+}
+
+
+/* Selecting span inside paragraph  */
+/* p span{
+    text-transform: uppercase;
+    background-color: gold;
+} */
+
+/* Better approch to do the same  */
+.highlight{
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+/* This will overide the paragraph selector  */
+
+.grey{
+    color: gray;
+}
+
+#second{
+    font-style: italic;
+}
+
+
+/*
+id selector > class selector > element selector, but 
+for same selector, whatever applied last.
+*/

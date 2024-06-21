@@ -1,0 +1,7 @@
+
+p{
+    /* CSS Rule => selector {property: property-value;} */
+    
+    font-size: 64px;                /*This increases font size to 64px*/
+    color: purple;               /*This changes color of text to purple*/
+}
