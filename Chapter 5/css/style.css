@@ -33,7 +33,7 @@
     padding: 1.5em;
     font-size: 1.5rem;
     margin: 1.5em;          /* 1.5 times of font size */
-    outline: 5px solid purple;   /* similar to border,but outside of margin */
+    outline: 5px solid purple;   /* similar to border,but outside of margin, does not takes extra space */
     outline-offset: 5px;           /*-ve values to bring inside box model*/
 }
 
